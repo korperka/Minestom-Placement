@@ -5,7 +5,6 @@ plugins {
 }
 
 var statesVersion = "e7732512f4"
-var utilityVersion = "227252e316"
 
 group = "fr.bretzel.minestom.placement"
 version = "1.1.1"
@@ -30,7 +29,7 @@ dependencies {
     implementation("com.github.ALS-Project:Minestom-States:$statesVersion") {
         exclude group: 'dev.hollowcube:minestom-ce', module: 'Minestom'
     }
-    implementation("com.github.ALS-Project:Minestom-Utilities:$utilityVersion") {
+    implementation("com.github.korperka:Minestom-Utilities:master-SNAPSHOT") {
         exclude group: 'dev.hollowcube:minestom-ce', module: 'Minestom'
     }
 }
